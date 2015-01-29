@@ -13,6 +13,7 @@
 		4202CCE61A7A9250006C167C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4202CCE51A7A9250006C167C /* Images.xcassets */; };
 		4202CCE91A7A9250006C167C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4202CCE71A7A9250006C167C /* LaunchScreen.xib */; };
 		4202CCF51A7A9250006C167C /* UITableViewSeperatorEffectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202CCF41A7A9250006C167C /* UITableViewSeperatorEffectsTests.swift */; };
+		4202CCFF1A7A92CC006C167C /* TableViewBlurredBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202CCFE1A7A92CC006C167C /* TableViewBlurredBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4202CCEE1A7A9250006C167C /* UITableViewSeperatorEffectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewSeperatorEffectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4202CCF31A7A9250006C167C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4202CCF41A7A9250006C167C /* UITableViewSeperatorEffectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewSeperatorEffectsTests.swift; sourceTree = "<group>"; };
+		4202CCFE1A7A92CC006C167C /* TableViewBlurredBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewBlurredBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4202CCDE1A7A924F006C167C /* AppDelegate.swift */,
 				4202CCE01A7A924F006C167C /* ViewController.swift */,
 				4202CCE21A7A924F006C167C /* Main.storyboard */,
+				4202CCFE1A7A92CC006C167C /* TableViewBlurredBackgroundView.swift */,
 				4202CCE51A7A9250006C167C /* Images.xcassets */,
 				4202CCE71A7A9250006C167C /* LaunchScreen.xib */,
 				4202CCDC1A7A924F006C167C /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4202CCFF1A7A92CC006C167C /* TableViewBlurredBackgroundView.swift in Sources */,
 				4202CCE11A7A924F006C167C /* ViewController.swift in Sources */,
 				4202CCDF1A7A924F006C167C /* AppDelegate.swift in Sources */,
 			);

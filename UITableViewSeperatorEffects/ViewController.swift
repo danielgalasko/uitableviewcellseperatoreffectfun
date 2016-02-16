@@ -12,7 +12,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //This is all we need to achieve blurred separators
-        let blurredBackgroundView = BlurredBackgroundView(frame: CGRectZero)
+        let blurredBackgroundView = BlurredBackgroundView(frame: .zero)
         tableView.backgroundView = blurredBackgroundView
         tableView.separatorEffect = UIVibrancyEffect(forBlurEffect: blurredBackgroundView.blurView.effect as! UIBlurEffect)
     }
@@ -24,7 +24,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         cell.backgroundColor = UIColor.clearColor()
         cell.textLabel?.text = words[indexPath.row]
         cell.textLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 26)
@@ -39,7 +39,7 @@ class BlurredBackgroundView: UIView {
     let blurView: UIVisualEffectView
     
     override init(frame: CGRect) {
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        let blurEffect = UIBlurEffect(style: .Dark)
         blurView = UIVisualEffectView(effect: blurEffect)
         imageView = UIImageView(image: UIImage.gorgeousImage())
         super.init(frame: frame)
@@ -47,7 +47,7 @@ class BlurredBackgroundView: UIView {
         addSubview(blurView)
     }
     
-    convenience required init(coder aDecoder: NSCoder) {
+    convenience required init?(coder aDecoder: NSCoder) {
         self.init(frame: CGRectZero)
     }
     

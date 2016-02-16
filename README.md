@@ -15,6 +15,14 @@ an imageView.
 
 To get the effect running all you need is to configure your table view like so:
 
+### Swift
+
+    let blurredBackgroundView = BlurredBackgroundView(frame: .zero)
+    tableView.backgroundView = blurredBackgroundView
+    tableView.separatorEffect = UIVibrancyEffect(forBlurEffect: blurredBackgroundView.blurView.effect as! UIBlurEffect)
+
+### Objective-C
+
     UIVisualEffectView *blur = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
     tableView.backgroundView = blur;
     tableView.separatorEffect = [UIVibrancyEffect effectForBlurEffect:(UIBlurEffect*)blur.effect];
